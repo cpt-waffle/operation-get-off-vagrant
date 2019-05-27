@@ -20,7 +20,7 @@ nvm install 10.15.3
 
 In the terminal write
 ```
-apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib
 ```
 this will install postgres. Once the installation finished run this command to set it to run on boot.
 
