@@ -3,7 +3,7 @@
 
 ### For Mac
 
-Install Brew from the [brew site](https://brew.sh/).
+Step one, install Brew from the [brew site](https://brew.sh/).
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -92,8 +92,8 @@ Unless you've done this before you should really only see this
 
 Download a specific version of ruby and set it as the global version, for example
 ```
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.3.0
+rbenv global 2.3.0
 rbenv versions
   system
 * 2.3.0
