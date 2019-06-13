@@ -100,6 +100,19 @@ Postico will help you see your database and visualize each table. It helps alot 
 nano ~/.bash_profile
 ```
 
+### Installing ImageMagick (required for many rails projects)
+
+If you already have the old version installed
+```
+brew unlink imagemagick
+```
+Then install and link version 6
+```
+brew install imagemagick@6
+brew link imagemagick@6 --force
+```
+
+
 while in there add
 
 ```
