@@ -1,5 +1,14 @@
 # How to set-up your machine (AKA get off Vagrant !!!)  #UNOFFICIAL
 
+Note: Before starting this procedure make sure that your vagrant VirtualBox is not running in the background. 
+Check vagrant status by running 
+```
+vagrant status
+``` 
+You can power off your vagrant by using the command 
+```
+vagrant halt
+```
 
 ### For Mac
 
