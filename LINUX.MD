@@ -82,8 +82,5 @@ We will also install 2.6.3 (or any latest ruby version at this time)
 ### Installing pgadmin3
 `sudo apt install pgadmin3`
 
-
-### Add A Little bit of Color to your Terminal
-
-save and restart your terminal (exit and close)
-Once open, write `ls` and you should have some color on your terminal files.
+### Byobu Terminal
+ [http://byobu.co/](http://byobu.co/)
