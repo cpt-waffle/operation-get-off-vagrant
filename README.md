@@ -12,10 +12,7 @@ vagrant halt
 
 ### For Mac
 
-Step one Install Brew
-
-
-from the [brew site](https://brew.sh/).
+Step one, install Brew from the [brew site](https://brew.sh/).
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -75,7 +72,43 @@ ALTER USER labber WITH Superuser createrole createdb replication;
 ```
 Once we're done quit out of postgres. And try to log in by just writting `psql`. If it works then everything worked correctly.
 
-### Installing RVM
+### Installing rbenv
+
+```
+brew install rbenv ruby-build
+```
+
+Add it to your .bash_profile so that it starts up every time your terminal loads up
+
+```
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
+
+Open a new terminal to start using it or in your current one type
+```
+rbenv init
+```
+
+Check out installations of ruby
+```
+rbenv versions
+```
+
+Unless you've done this before you should really only see this
+```
+* system
+```
+
+Download a specific version of ruby and set it as the global version, for example
+```
+rbenv install 2.3.0
+rbenv global 2.3.0
+rbenv versions
+  system
+* 2.3.0
+```
+
+### (Alternative if rbenv doesn't work) Installing RVM
 
 We need to run this command
 
