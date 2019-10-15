@@ -54,8 +54,47 @@ CREATE DATABASE labber OWNER labber;
 ALTER USER labber WITH Superuser createrole createdb replication;
 ```
 Once we're done quit out of postgres. And try to log in by just writting `psql`. If it works then everything worked correctly.
+## Next is to Install RVM OR RBENV
 
-### Installing RVM
+# NOTE: ONLY INSTALL ONE OR OTHER BUT NOT BOTH !!!!!!! ( Suggestion: install rbenv ) 
+
+### Installing RBENV
+
+First run these command to get the correct dependencies
+
+`sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev`
+
+Then clone rbenv 
+
+`git clone https://github.com/rbenv/rbenv.git ~/.rbenv`
+
+Next, is to add the correct path to your bashrc so you are able to use `rbenv`
+
+`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc`
+
+`echo 'eval "$(rbenv init -)"' >> ~/.bashrc`
+
+Then reload your `bashrc` with this command
+
+`source ~/.bashrc`
+
+Now install the latest ver of ruby with this command
+
+`rbenv install 2.6.5`
+
+Once that command completes, make the latest ver of ruby the `global` ruby for your machine 
+
+`rbenv global 2.6.5`
+
+Then install ruby 2.3.5 for running old projects 
+
+`rbenv install 2.3.5`
+
+Use the `local` command to run folders/projects in specific ver of ruby ( such as older rails projects ) 
+
+`rbenv local 2.3.5`
+
+### Installing RVM ( ONLY IF YOU DIDN"T INSTALL RBENV )
 
 We need to run this command
 
