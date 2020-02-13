@@ -129,6 +129,11 @@ brew unlink imagemagick
 brew install imagemagick@6 && brew link imagemagick@6 --force
 ```
 
+Note: if you have error `bundle install` on jungle with bundler image issues, this are the command to fix by installing the exact bundler
+```
+gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+```
+
 ## BONUS STUFF TO INSTALL
 
 ###Installing Postico
