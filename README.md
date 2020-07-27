@@ -26,7 +26,7 @@ Run these commands. from this [site](http://dev.topheman.com/install-nvm-with-ho
 ```
 brew update
 brew install nvm
-nano ~/.bash_profile
+nano ~/.bash_profile (if you're on macOS Catalina or using zsh, use 'nano ~/.zshrc')
 ```
 A terminal editor will pop up. Here you will have to insert this piece of code. Inside of the terminal window.
 
@@ -78,10 +78,14 @@ Once we're done quit out of postgres. And try to log in by just writting `psql`.
 brew install rbenv ruby-build
 ```
 
-Add it to your .bash_profile so that it starts up every time your terminal loads up
+Add it to your .bash_profile (.zshrc file) so that it starts up every time your terminal loads up
 
 ```
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
+or, in .zshrc:
+```
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc)
 ```
 
 Open a new terminal to start using it or in your current one type
@@ -151,6 +155,12 @@ while in there add
 
 ```
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+```
+or, in .zshrc:
+```
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
