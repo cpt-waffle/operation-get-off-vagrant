@@ -62,11 +62,13 @@ Once we're done quit out of postgres. And try to log in by just writting `psql`.
 
 First run these command to get the correct dependencies
 
-`sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev`
+`sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev libssl-dev libreadline-dev zlib1g-dev`
 
-Then clone rbenv 
+Then clone rbenv and ruby-build 
 
 `git clone https://github.com/rbenv/rbenv.git ~/.rbenv`
+
+`git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build`
 
 Next, is to add the correct path to your bashrc so you are able to use `rbenv`
 
@@ -80,11 +82,11 @@ Then reload your `bashrc` with this command
 
 Now install the latest ver of ruby with this command
 
-`rbenv install 2.6.5`
+`rbenv install 2.6.6`
 
 Once that command completes, make the latest ver of ruby the `global` ruby for your machine 
 
-`rbenv global 2.6.5`
+`rbenv global 2.6.6`
 
 Then install ruby 2.3.5 for running old projects 
 
